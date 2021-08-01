@@ -1,0 +1,621 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\timer.X.production.o
+cinit CODE 0 7F6 7F6 A 2
+text1 CODE 0 2D0 2D0 BA 2
+text2 CODE 0 9E 9E 6A 2
+text3 CODE 0 3 3 D 2
+text4 CODE 0 38A 38A 10B 2
+text5 CODE 0 108 108 7C 2
+text6 CODE 0 495 495 361 2
+text7 CODE 0 10 10 27 2
+text8 CODE 0 FA7 FA7 59 2
+text9 CODE 0 37 37 67 2
+text10 CODE 0 226 226 AA 2
+text11 CODE 0 184 184 A2 2
+nvBANK0 BANK0 1 56 56 2 1
+maintext CODE 0 F5C F5C 4B 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 32 1
+bssBANK0 BANK0 1 52 52 4 1
+strings STRING 0 800 800 1A 2
+config CONFIG 4 2007 2007 2 2
+$C:\Users\DELL\AppData\Local\Temp\sdkc.o
+end_init CODE 0 0 0 3 2
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 58-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 58-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 81A-F5B 2
+CONST 1000-1FFF 2
+ENTRY 81A-F5B 2
+ENTRY 1000-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 81A-F5B 2
+CODE 1000-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 81A-F5B 2
+STRCODE 1000-1FFF 2
+STRING 81A-F5B 2
+STRING 1000-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\timer.X.production.o
+7F6 cinit CODE >668:C:\Users\DELL\AppData\Local\Temp\sdkc.s
+7F6 cinit CODE >671:C:\Users\DELL\AppData\Local\Temp\sdkc.s
+7F6 cinit CODE >682:C:\Users\DELL\AppData\Local\Temp\sdkc.s
+7F7 cinit CODE >683:C:\Users\DELL\AppData\Local\Temp\sdkc.s
+7F8 cinit CODE >684:C:\Users\DELL\AppData\Local\Temp\sdkc.s
+7F9 cinit CODE >685:C:\Users\DELL\AppData\Local\Temp\sdkc.s
+7FA cinit CODE >686:C:\Users\DELL\AppData\Local\Temp\sdkc.s
+7FB cinit CODE >687:C:\Users\DELL\AppData\Local\Temp\sdkc.s
+7FC cinit CODE >693:C:\Users\DELL\AppData\Local\Temp\sdkc.s
+7FC cinit CODE >695:C:\Users\DELL\AppData\Local\Temp\sdkc.s
+7FD cinit CODE >696:C:\Users\DELL\AppData\Local\Temp\sdkc.s
+184 text11 CODE >4:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+184 text11 CODE >7:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+198 text11 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+1A0 text11 CODE >9:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+1B4 text11 CODE >10:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+1BC text11 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+1C0 text11 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+1E4 text11 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+1E8 text11 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+20C text11 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+20E text11 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+210 text11 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+225 text11 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+226 text10 CODE >14:E:\PIC\PIC project\timer.X\led7.c
+226 text10 CODE >15:E:\PIC\PIC project\timer.X\led7.c
+25E text10 CODE >16:E:\PIC\PIC project\timer.X\led7.c
+296 text10 CODE >17:E:\PIC\PIC project\timer.X\led7.c
+2CE text10 CODE >18:E:\PIC\PIC project\timer.X\led7.c
+2CF text10 CODE >20:E:\PIC\PIC project\timer.X\led7.c
+37 text9 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+37 text9 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+38 text9 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+3C text9 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+41 text9 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+43 text9 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+47 text9 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+4C text9 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+50 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+52 text9 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+58 text9 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+5A text9 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+5B text9 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+62 text9 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+66 text9 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+6A text9 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+71 text9 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+7B text9 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+81 text9 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+82 text9 CODE >35:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+89 text9 CODE >36:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+8F text9 CODE >38:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+94 text9 CODE >39:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+99 text9 CODE >40:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+9D text9 CODE >41:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+FA7 text8 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FA7 text8 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FA8 text8 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FAC text8 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FB1 text8 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FB3 text8 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FB7 text8 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FBC text8 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FC2 text8 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FC4 text8 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FC5 text8 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FCC text8 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FD0 text8 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FD4 text8 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FDE text8 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FE4 text8 CODE >28:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FEB text8 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FF1 text8 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FF6 text8 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FFB text8 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FFF text8 CODE >34:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+10 text7 CODE >4:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+11 text7 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+13 text7 CODE >6:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+1A text7 CODE >51:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+1E text7 CODE >52:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+24 text7 CODE >53:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+24 text7 CODE >54:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+2B text7 CODE >55:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+2D text7 CODE >56:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+32 text7 CODE >59:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+36 text7 CODE >60:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+495 text6 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+495 text6 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+49C text6 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4A2 text6 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4A6 text6 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4A7 text6 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4AC text6 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4B1 text6 CODE >28:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4B9 text6 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4BA text6 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4BB text6 CODE >36:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4C3 text6 CODE >39:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4C8 text6 CODE >40:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4CE text6 CODE >41:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4D2 text6 CODE >42:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4D3 text6 CODE >45:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4D8 text6 CODE >48:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4DD text6 CODE >50:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4E5 text6 CODE >53:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4E6 text6 CODE >54:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4E7 text6 CODE >57:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4EF text6 CODE >65:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+4F9 text6 CODE >66:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+502 text6 CODE >119:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+512 text6 CODE >120:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+51F text6 CODE >121:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+52C text6 CODE >122:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+53C text6 CODE >123:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+558 text6 CODE >124:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+574 text6 CODE >125:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+584 text6 CODE >126:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+5A0 text6 CODE >127:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+5BC text6 CODE >128:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+5C5 text6 CODE >129:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+5D5 text6 CODE >130:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+5F2 text6 CODE >131:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+602 text6 CODE >132:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+61F text6 CODE >133:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+628 text6 CODE >134:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+638 text6 CODE >135:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+655 text6 CODE >136:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+665 text6 CODE >137:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+682 text6 CODE >138:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+692 text6 CODE >139:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+6AF text6 CODE >140:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+6BF text6 CODE >141:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+6E5 text6 CODE >145:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+70D text6 CODE >146:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+716 text6 CODE >149:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+723 text6 CODE >152:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+724 text6 CODE >153:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+72D text6 CODE >154:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+731 text6 CODE >155:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+732 text6 CODE >157:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+73B text6 CODE >158:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+741 text6 CODE >152:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+745 text6 CODE >163:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+746 text6 CODE >164:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+74A text6 CODE >165:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+75E text6 CODE >166:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+760 text6 CODE >167:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+761 text6 CODE >168:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+761 text6 CODE >169:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+766 text6 CODE >174:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+76B text6 CODE >175:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+779 text6 CODE >176:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+77D text6 CODE >177:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+796 text6 CODE >178:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+79C text6 CODE >183:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7A9 text6 CODE >184:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7B3 text6 CODE >185:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7B4 text6 CODE >187:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7C3 text6 CODE >188:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7CD text6 CODE >190:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7CE text6 CODE >191:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7CF text6 CODE >194:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7D5 text6 CODE >195:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7DD text6 CODE >196:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7E1 text6 CODE >197:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7E2 text6 CODE >199:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7E9 text6 CODE >200:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7E9 text6 CODE >201:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7ED text6 CODE >203:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+7F5 text6 CODE >205:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
+108 text5 CODE >43:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+108 text5 CODE >47:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+115 text5 CODE >48:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+11E text5 CODE >49:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+133 text5 CODE >50:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+134 text5 CODE >51:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+13C text5 CODE >52:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+13E text5 CODE >53:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+142 text5 CODE >54:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+14A text5 CODE >57:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+153 text5 CODE >58:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+15C text5 CODE >60:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+163 text5 CODE >63:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+16C text5 CODE >64:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+16E text5 CODE >62:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+16E text5 CODE >65:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+173 text5 CODE >67:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+178 text5 CODE >68:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+183 text5 CODE >70:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
+38A text4 CODE >26:E:\PIC\PIC project\timer.X\led7.c
+38A text4 CODE >28:E:\PIC\PIC project\timer.X\led7.c
+39E text4 CODE >29:E:\PIC\PIC project\timer.X\led7.c
+3A3 text4 CODE >30:E:\PIC\PIC project\timer.X\led7.c
+3B7 text4 CODE >31:E:\PIC\PIC project\timer.X\led7.c
+3BC text4 CODE >32:E:\PIC\PIC project\timer.X\led7.c
+3E7 text4 CODE >33:E:\PIC\PIC project\timer.X\led7.c
+3ED text4 CODE >34:E:\PIC\PIC project\timer.X\led7.c
+418 text4 CODE >35:E:\PIC\PIC project\timer.X\led7.c
+41E text4 CODE >36:E:\PIC\PIC project\timer.X\led7.c
+449 text4 CODE >37:E:\PIC\PIC project\timer.X\led7.c
+44B text4 CODE >38:E:\PIC\PIC project\timer.X\led7.c
+464 text4 CODE >39:E:\PIC\PIC project\timer.X\led7.c
+477 text4 CODE >40:E:\PIC\PIC project\timer.X\led7.c
+48A text4 CODE >41:E:\PIC\PIC project\timer.X\led7.c
+494 text4 CODE >42:E:\PIC\PIC project\timer.X\led7.c
+3 text3 CODE >22:E:\PIC\PIC project\timer.X\led7.c
+4 text3 CODE >23:E:\PIC\PIC project\timer.X\led7.c
+F text3 CODE >24:E:\PIC\PIC project\timer.X\led7.c
+9E text2 CODE >44:E:\PIC\PIC project\timer.X\led7.c
+9E text2 CODE >45:E:\PIC\PIC project\timer.X\led7.c
+AD text2 CODE >46:E:\PIC\PIC project\timer.X\led7.c
+B5 text2 CODE >47:E:\PIC\PIC project\timer.X\led7.c
+B8 text2 CODE >48:E:\PIC\PIC project\timer.X\led7.c
+C2 text2 CODE >49:E:\PIC\PIC project\timer.X\led7.c
+C5 text2 CODE >51:E:\PIC\PIC project\timer.X\led7.c
+CB text2 CODE >52:E:\PIC\PIC project\timer.X\led7.c
+CE text2 CODE >53:E:\PIC\PIC project\timer.X\led7.c
+D8 text2 CODE >54:E:\PIC\PIC project\timer.X\led7.c
+DB text2 CODE >56:E:\PIC\PIC project\timer.X\led7.c
+E1 text2 CODE >57:E:\PIC\PIC project\timer.X\led7.c
+E4 text2 CODE >58:E:\PIC\PIC project\timer.X\led7.c
+EE text2 CODE >59:E:\PIC\PIC project\timer.X\led7.c
+F1 text2 CODE >61:E:\PIC\PIC project\timer.X\led7.c
+F7 text2 CODE >62:E:\PIC\PIC project\timer.X\led7.c
+FA text2 CODE >63:E:\PIC\PIC project\timer.X\led7.c
+104 text2 CODE >64:E:\PIC\PIC project\timer.X\led7.c
+107 text2 CODE >65:E:\PIC\PIC project\timer.X\led7.c
+2D0 text1 CODE >10:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2D1 text1 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2DA text1 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2E9 text1 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2EA text1 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2F2 text1 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2F2 text1 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+2FA text1 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+303 text1 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+307 text1 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+308 text1 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+30C text1 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+315 text1 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+31C text1 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+320 text1 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+32E text1 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+337 text1 CODE >28:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+337 text1 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+33E text1 CODE >34:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+340 text1 CODE >35:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+349 text1 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+353 text1 CODE >37:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+357 text1 CODE >38:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+35F text1 CODE >39:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+361 text1 CODE >40:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+377 text1 CODE >41:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+380 text1 CODE >42:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+381 text1 CODE >43:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+389 text1 CODE >44:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
+F5C maintext CODE >57:E:\PIC\PIC project\timer.X\timer.c
+F5C maintext CODE >60:E:\PIC\PIC project\timer.X\timer.c
+F5F maintext CODE >61:E:\PIC\PIC project\timer.X\timer.c
+F60 maintext CODE >62:E:\PIC\PIC project\timer.X\timer.c
+F61 maintext CODE >63:E:\PIC\PIC project\timer.X\timer.c
+F62 maintext CODE >64:E:\PIC\PIC project\timer.X\timer.c
+F64 maintext CODE >65:E:\PIC\PIC project\timer.X\timer.c
+F67 maintext CODE >66:E:\PIC\PIC project\timer.X\timer.c
+F68 maintext CODE >67:E:\PIC\PIC project\timer.X\timer.c
+F69 maintext CODE >68:E:\PIC\PIC project\timer.X\timer.c
+F71 maintext CODE >71:E:\PIC\PIC project\timer.X\timer.c
+F7A maintext CODE >72:E:\PIC\PIC project\timer.X\timer.c
+F81 maintext CODE >73:E:\PIC\PIC project\timer.X\timer.c
+F88 maintext CODE >74:E:\PIC\PIC project\timer.X\timer.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\timer.X.production.o
+___awdiv@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+__Hspace_0 1000 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_T1CONbits 10 0 ABS 0 - dist/default/production\timer.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\DELL\AppData\Local\Temp\sdkc.o
+_main 1EB8 0 CODE 0 maintext dist/default/production\timer.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\timer.X.production.o
+start 0 0 CODE 0 init C:\Users\DELL\AppData\Local\Temp\sdkc.o
+___flmul@aexp 2D 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+___flmul@bexp 2E 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+___flmul@prod 2F 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+___flmul@sign 28 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+___flmul@temp 33 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\timer.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\timer.X.production.o
+__size_of___flmul 0 0 ABS 0 - dist/default/production\timer.X.production.o
+__size_of___fltol 0 0 ABS 0 - dist/default/production\timer.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\timer.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\DELL\AppData\Local\Temp\sdkc.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\DELL\AppData\Local\Temp\sdkc.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\DELL\AppData\Local\Temp\sdkc.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\DELL\AppData\Local\Temp\sdkc.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\DELL\AppData\Local\Temp\sdkc.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\DELL\AppData\Local\Temp\sdkc.o
+wtemp0 7E 0 ABS 0 - dist/default/production\timer.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__size_of_Led7_addFloatToBuffer 0 0 ABS 0 - dist/default/production\timer.X.production.o
+_ADCON1 9F 0 ABS 0 - dist/default/production\timer.X.production.o
+__end_of__Umul8_16 6E 0 CODE 0 text7 dist/default/production\timer.X.production.o
+___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+_Led7_displayUnit 6 0 CODE 0 text3 dist/default/production\timer.X.production.o
+__size_of__Umul8_16 0 0 ABS 0 - dist/default/production\timer.X.production.o
+__end_of___flge 44C 0 CODE 0 text11 dist/default/production\timer.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+__end_of___awdiv 13C 0 CODE 0 text9 dist/default/production\timer.X.production.o
+__end_of___awmod 2000 0 CODE 0 text8 dist/default/production\timer.X.production.o
+__Umul8_16 20 0 CODE 0 text7 dist/default/production\timer.X.production.o
+__end_of___flmul FEC 0 CODE 0 text6 dist/default/production\timer.X.production.o
+__end_of___fltol 308 0 CODE 0 text5 dist/default/production\timer.X.production.o
+__Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\DELL\AppData\Local\Temp\sdkc.o
+___stacklo 0 0 ABS 0 - C:\Users\DELL\AppData\Local\Temp\sdkc.o
+Led7_addFloatToBuffer@i 47 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+Led7_addFloatToBuffer@p 49 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+Led7_addFloatToBuffer@num 40 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+___flmul@a 24 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+___flmul@b 20 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+start_initialization FEC 0 CODE 0 cinit dist/default/production\timer.X.production.o
+__end_of_Led7_pointIndex 5A0 0 CODE 0 text10 dist/default/production\timer.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+_Led7_display 13C 0 CODE 0 text2 dist/default/production\timer.X.production.o
+_TRISC0 438 0 ABS 0 - dist/default/production\timer.X.production.o
+__end_of_Led7_displayUnit 20 0 CODE 0 text3 dist/default/production\timer.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\DELL\AppData\Local\Temp\sdkc.o
+__size_of_Led7_displayUnit 0 0 ABS 0 - dist/default/production\timer.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 100A 0 STRING 0 strings dist/default/production\timer.X.production.o
+__size_of___xxtofl 0 0 ABS 0 - dist/default/production\timer.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+___xxtofl@arg 7A 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+___xxtofl@exp 79 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+___xxtofl@val 70 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FEC 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+___flmul@grs 29 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+__size_of_Led7_display 0 0 ABS 0 - dist/default/production\timer.X.production.o
+_Led7_pointIndex 44C 0 CODE 0 text10 dist/default/production\timer.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 56 0 BANK0 1 nvBANK0 dist/default/production\timer.X.production.o
+___flge 308 0 CODE 0 text11 dist/default/production\timer.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_RD0 40 0 ABS 0 - dist/default/production\timer.X.production.o
+_RD1 41 0 ABS 0 - dist/default/production\timer.X.production.o
+_RD2 42 0 ABS 0 - dist/default/production\timer.X.production.o
+_RD3 43 0 ABS 0 - dist/default/production\timer.X.production.o
+__S0 1000 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_cnt 56 0 BANK0 1 nvBANK0 dist/default/production\timer.X.production.o
+_buffer 52 0 BANK0 1 bssBANK0 dist/default/production\timer.X.production.o
+Led7_displayUnit@number 70 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+Led7_pointIndex@num 20 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+__end_of_Led7_display 210 0 CODE 0 text2 dist/default/production\timer.X.production.o
+___xxtofl 5A0 0 CODE 0 text1 dist/default/production\timer.X.production.o
+Led7_addFloatToBuffer@newNum 45 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 0 0 CODE 0 intentry -
+__stringtab 1000 0 STRING 0 strings dist/default/production\timer.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\DELL\AppData\Local\Temp\sdkc.o
+__end_of___xxtofl 714 0 CODE 0 text1 dist/default/production\timer.X.production.o
+__size_of___flge 0 0 ABS 0 - dist/default/production\timer.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+__ptext10 44C 0 CODE 0 text10 dist/default/production\timer.X.production.o
+__ptext11 308 0 CODE 0 text11 dist/default/production\timer.X.production.o
+___awdiv 6E 0 CODE 0 text9 dist/default/production\timer.X.production.o
+___awmod 1F4E 0 CODE 0 text8 dist/default/production\timer.X.production.o
+___flmul 92A 0 CODE 0 text6 dist/default/production\timer.X.production.o
+___fltol 210 0 CODE 0 text5 dist/default/production\timer.X.production.o
+__pmaintext 1EB8 0 CODE 0 maintext dist/default/production\timer.X.production.o
+__Umul8_16@multiplier 78 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__size_of_Led7_pointIndex 0 0 ABS 0 - dist/default/production\timer.X.production.o
+__end_of__stringtab 100C 0 STRING 0 strings dist/default/production\timer.X.production.o
+_LED7_HEX 100C 0 STRING 0 strings dist/default/production\timer.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Umul8_16@product 74 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+___flge@ff1 70 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+___flge@ff2 74 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+___fltol@exp1 3F 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+__end_of_LED7_HEX 1034 0 STRING 0 strings dist/default/production\timer.X.production.o
+__end_of_Led7_addFloatToBuffer 92A 0 CODE 0 text4 dist/default/production\timer.X.production.o
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\timer.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 77 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+?___awdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+?___flmul 20 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+?___fltol 35 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+__ptext1 5A0 0 CODE 0 text1 dist/default/production\timer.X.production.o
+__ptext2 13C 0 CODE 0 text2 dist/default/production\timer.X.production.o
+__ptext3 6 0 CODE 0 text3 dist/default/production\timer.X.production.o
+__ptext4 714 0 CODE 0 text4 dist/default/production\timer.X.production.o
+__ptext5 210 0 CODE 0 text5 dist/default/production\timer.X.production.o
+__ptext6 92A 0 CODE 0 text6 dist/default/production\timer.X.production.o
+__ptext7 20 0 CODE 0 text7 dist/default/production\timer.X.production.o
+__ptext8 1F4E 0 CODE 0 text8 dist/default/production\timer.X.production.o
+__ptext9 6E 0 CODE 0 text9 dist/default/production\timer.X.production.o
+_Led7_addFloatToBuffer 714 0 CODE 0 text4 dist/default/production\timer.X.production.o
+?__Umul8_16 70 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+?___xxtofl 70 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Umul8_16@word_mpld 76 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+___fltol@sign1 3E 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+___fltol@f1 35 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\timer.X.production.o
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+__end_of_main 1F4E 0 CODE 0 maintext dist/default/production\timer.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\timer.X.production.o
+_TMR1H F 0 ABS 0 - dist/default/production\timer.X.production.o
+_TMR1L E 0 ABS 0 - dist/default/production\timer.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\timer.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\timer.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__initialization FEC 0 CODE 0 cinit dist/default/production\timer.X.production.o
+___xxtofl@sign 78 0 COMMON 1 cstackCOMMON dist/default/production\timer.X.production.o
+__pbssBANK0 52 0 BANK0 1 bssBANK0 dist/default/production\timer.X.production.o
+__pstrings 1000 0 STRING 0 strings dist/default/production\timer.X.production.o
+Led7_display@num 4A 0 BANK0 1 cstackBANK0 dist/default/production\timer.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7F6 FEC A 2
+text1 0 2D0 5A0 BA 2
+text2 0 9E 13C 6A 2
+text4 0 38A 714 10B 2
+text5 0 108 210 7C 2
+text6 0 495 92A 361 2
+text7 0 10 20 27 2
+text8 0 FA7 1F4E 59 2
+text9 0 37 6E 67 2
+text10 0 226 44C AA 2
+text11 0 184 308 A2 2
+maintext 0 F5C 1EB8 4B 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 38 1
+reset_vec 0 0 0 10 2
+strings 0 800 1000 1A 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
